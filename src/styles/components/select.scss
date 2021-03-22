@@ -1,0 +1,12 @@
+.select-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+  select {
+    font-size: 18px;
+    border: 1px solid grey;
+    padding: 10px;
+  }
+}
+

@@ -1,0 +1,63 @@
+.list-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    width: 100%;
+  }
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+h4 {
+  font-weight: normal;
+}
+li {
+  margin: 15px;
+}
+
+
+//// pagination styles
+.pagination-wrapper {
+  margin: 20px;
+  display: flex;
+}
+
+.pagination  {
+  margin: 0 auto;
+  font-size: 18px;
+
+  li {
+  display: inline;
+  cursor: pointer;
+   
+    @media (max-width: 500px) {
+      margin: 5px;
+    }
+
+    a {
+      outline:0;
+    }
+
+    &.previous.disabled, &.next.disabled {
+      opacity: 0.3;
+      cursor:initial;
+      font-weight: normal;
+    }
+  
+  }
+  .active {
+    background: grey;
+    padding: 8px;
+  } 
+}
+
+.main {
+  width: 100vw;
+  overflow: hidden;
+}
